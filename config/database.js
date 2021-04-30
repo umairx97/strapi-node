@@ -6,8 +6,8 @@ module.exports = ({ env }) => {
       default: {
         connector: 'mongoose',
         settings: {
-          uri: env('DATABASE_URI', MONGO_URI || 'mongodb://localhost:27017/strapi-node'),
-          srv: env.bool('DATABASE_SRV', true)
+          uri: env('MONGO_URI', MONGO_URI || 'mongodb://localhost:27017/strapi-node'),
+          srv: env.bool('MONGO_SRV', true)
         }
       }
     }
